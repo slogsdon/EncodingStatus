@@ -1,4 +1,11 @@
 <?php
 require 'vendor/autoload.php';
 
-include 'template.phtml';
+$app = new \Slim\Slim(array(
+	'templates.path' => './templates',
+));
+
+include_once 'routes/api.php';
+include_once 'routes/web.php';
+
+$app->run();

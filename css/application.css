@@ -22,8 +22,8 @@ html,body {
 	height: 100%;
 	padding-left: 10px;
 	position: absolute;
-		left: 0;
-		top: 0;
+	left: 0;
+	top: 0;
 	width: 100%;
 }
 #content nav.top {
@@ -40,7 +40,7 @@ html,body {
 	height: 100%;
 	padding-top: 2em;
 	position: absolute;
-		left: 0;
-		top:0;
+	left: 0;
+	top:0;
 	width: 100%;
 }
