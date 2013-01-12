@@ -4,8 +4,8 @@
 	<meta charset"utf-8" />
 	<title>Encoding Status</title>
 	<!-- Begin CSS -->
-	<link href="css/lava.css" rel="stylesheet" type="text/css" />
-	<link href="css/application.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/lava.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/application.css" rel="stylesheet" type="text/css" />
 	<!-- End CSS -->
 </head>
 <body class="lava">
@@ -20,9 +20,10 @@
 				<nav class="main">
 					<ul>
 						<li><a href="/">Home</a></li>
-						<li><a href="/queue">Queue</a></li>
+						<li><a href="/jobs">Jobs</a></li>
 						<li><a href="/profiles">Profiles</a></li>
 						<li><a href="/collections">Collections</a></li>
+						<li><a href="/settings">Settings</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -45,8 +46,8 @@
 <!-- End Structure -->
 <!-- Begin Javascript -->
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>-->
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/application.js" type="text/javascript"></script>
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/application.js" type="text/javascript"></script>
 <!-- End Javascript -->
 </body>
 </html>

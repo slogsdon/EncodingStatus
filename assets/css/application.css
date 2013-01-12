@@ -1,0 +1,47 @@
+html,body {
+	height:100%;
+}
+.wrapper {
+	background-color: #777777;
+	height: 100%;
+}
+.container {
+	height: inherit;
+}
+#content {
+	background-color: #ffffff;
+	box-shadow: 3px 3px 4px #000;
+		-moz-box-shadow: 3px 3px 4px #000;
+		-webkit-box-shadow: 3px 3px 4px #000;
+	min-height: 100%;
+		height: auto !important;
+		height: 100%;
+	padding-left: 0;
+	padding-right: 10px;
+	position: relative;
+}
+#content .inside {
+	height: 100%;
+	padding-left: 10px;
+	position: absolute;
+		left: 0;
+		top: 0;
+	width: 100%;
+}
+#content nav.top {
+	margin-top: 2em;
+}
+#left {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position: relative;
+}
+#left .inside {
+	height: 100%;
+	padding-top: 2em;
+	position: absolute;
+		left: 0;
+		top:0;
+	width: 100%;
+}
