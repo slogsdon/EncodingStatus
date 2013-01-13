@@ -17,7 +17,7 @@
 				<header>
 					<span class="title">encodingStatus</span>
 				</header>
-				<nav class="main">
+				<nav class="main nomobile">
 					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/jobs">Jobs</a></li>
@@ -25,6 +25,15 @@
 						<li><a href="/collections">Collections</a></li>
 						<li><a href="/settings">Settings</a></li>
 					</ul>
+				</nav>
+				<nav class="mobile">
+					<?php echo buildMobileMenu(array(
+						'/' => 'Home',
+						'/jobs' => 'Jobs',
+						'/profiles' => 'Profiles',
+						'/collections' => 'Collections',
+						'/settings' => 'Settings',
+					)); ?>
 				</nav>
 			</div>
 		</div>
@@ -39,6 +48,11 @@
 				<nav class="pager bottom">
 					<?php include 'pager.php';?>
 				</nav>
+			</div>
+		</div>
+		<div id="footer" class="ten shift-two first last">
+			<div class="inside">
+				<a href="https://github.com/slogsdon/EncodingStatus">Encoding Status Github</a>
 			</div>
 		</div>
 	</div>

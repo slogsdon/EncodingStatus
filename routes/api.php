@@ -1,7 +1,7 @@
 <?php
 
 // set up
-include_once '../views/api.php';
+include_once './views/api.php';
 $app->view(new ApiView());
 
 // routes

@@ -1,47 +1,124 @@
-html,body {
-	height:100%;
-}
-.wrapper {
-	background-color: #777777;
+html, body, .wrapper {
+	background-color: #777;
 	height: 100%;
 }
+
 .container {
 	height: inherit;
 }
+
 #content {
-	background-color: #ffffff;
-	box-shadow: 3px 3px 4px #000;
-		-moz-box-shadow: 3px 3px 4px #000;
-		-webkit-box-shadow: 3px 3px 4px #000;
-	min-height: 100%;
-		height: auto !important;
-		height: 100%;
+	background-color: #fff;
+	box-shadow: -3px 3px 6px #333;
+		-moz-box-shadow: -3px 3px 6px #333;
+		-webkit-box-shadow: -3px 3px 6px #333;
+	min-height: 50%;
 	padding-left: 0;
 	padding-right: 10px;
 	position: relative;
 }
-#content .inside {
+
+div.inside {
 	height: 100%;
-	padding-left: 10px;
-	position: absolute;
-		left: 0;
-		top: 0;
-	width: 100%;
-}
-#content nav.top {
-	margin-top: 2em;
-}
-#left {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	position: relative;
-}
-#left .inside {
-	height: 100%;
-	padding-top: 2em;
 	position: absolute;
 		left: 0;
 		top:0;
 	width: 100%;
+}
+
+#content .inside {
+}
+
+#content nav.top {
+	margin-top: 2em;
+}
+
+#content .inside section {
+	padding-right: 20px;
+}
+#content .inside section .add-new {
+	height: 31px;
+	padding-top: 10px;
+}
+#content .inside section table {
+	width: 100%;
+}
+
+#left {
+	color: #eee;
+	min-height: 25%;
+	position: relative;
+}
+
+#left .inside {
+	padding-top: 2em;
+}
+
+#left a {
+	color: #ccc;
+	padding-left: .5em;
+	text-decoration: none;
+}
+
+#left a:hover {
+	color: #aaa;
+}
+
+#left header {
+	font-weight: 900;
+	text-align: left;
+}
+
+#left nav.main li {
+	border-bottom: 1px solid #666;
+	margin: 0;
+	padding: .4em 0;
+	width: 85%;
+}
+
+#left nav.main li:last-child {
+	border-bottom: none;
+}
+
+#left nav.mobile {
+	display: none;
+}
+
+#footer, #footer a {
+	color: #bbb;
+}
+
+#footer {
+	position: relative;
+}
+
+#footer .inside {
+	padding-top: 1.5em;
+	padding-bottom: 3em;
+}
+
+@media only screen and (max-width:767px) { 
+	#left, #left .inside {
+		min-height: auto;
+		position: relative;
+	}
+
+	#left header {
+		text-align: center;
+	}
+
+	#left nav.mobile {
+		display: block;
+		padding-top: 1em;
+	}
+
+	#left nav.mobile select {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width:480px) {
+	#content .inside section .add-new, #content .inside section .add-new .button {
+		
+	}
 }
