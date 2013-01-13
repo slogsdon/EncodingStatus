@@ -11,7 +11,7 @@
 // } catch (PDOException $e) {
 //     echo 'Connection failed: ' . $e->getMessage()."\n";
 // }
-$split = explode('/', $_ENV['MONGO_URL']);
+$split = explode('/', $_SERVER['MONGO_URL']);
 $database_name = array_pop($split);
 $mongo_url = implode('/', $split);
 $db = null;
