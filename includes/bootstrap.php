@@ -1,6 +1,6 @@
 <?php
 require './vendor/autoload.php';
-require './includes/database.php';
+require './includes/orm.php';
 include './includes/extras.php';
 
 $app = new \Slim\Slim(array(

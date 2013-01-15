@@ -4,8 +4,8 @@
 	<meta charset"utf-8" />
 	<title>Encoding Status</title>
 	<!-- Begin CSS -->
-	<link href="assets/css/lava.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/application.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/css/lava.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/css/application.css" rel="stylesheet" type="text/css" />
 	<!-- End CSS -->
 </head>
 <body class="lava">
@@ -52,7 +52,7 @@
 		</div>
 		<div id="footer" class="ten shift-two first last">
 			<div class="inside">
-				<a href="https://github.com/slogsdon/EncodingStatus">Encoding Status Github</a>
+				powered by <a href="https://github.com/slogsdon/EncodingStatus">Encoding Status</a>
 			</div>
 		</div>
 	</div>
@@ -60,8 +60,8 @@
 <!-- End Structure -->
 <!-- Begin Javascript -->
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>-->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="assets/js/application.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/application.js" type="text/javascript"></script>
 <!-- End Javascript -->
 </body>
 </html>

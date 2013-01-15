@@ -15,14 +15,10 @@ html, body, .wrapper {
 	min-height: 50%;
 	padding-left: 0;
 	padding-right: 10px;
-	position: relative;
 }
 
 div.inside {
 	height: 100%;
-	position: absolute;
-		left: 0;
-		top:0;
 	width: 100%;
 }
 
@@ -33,21 +29,49 @@ div.inside {
 	margin-top: 2em;
 }
 
-#content .inside section {
+#content section {
 	padding-right: 20px;
 }
-#content .inside section .add-new {
+#content section .add-new {
 	height: 31px;
 	padding-top: 10px;
 }
-#content .inside section table {
+#content table {
 	width: 100%;
+}
+#content th {
+	text-align: left;
+}
+#content tbody tr, #content thead tr {
+	line-height: 2em;
+	border-bottom: 1px solid #ddd;
+}
+#content tbody tr:last-child {
+	border-bottom: 0;
+}
+#content tr .actions {
+	font-size: .75em;
+	line-height: 1em;
+	margin: -.25em 0 .25em 0;
+	padding-left: .25em;
+	visibility: hidden;
+}
+#content tr:hover .actions {
+	visibility: visible;
+}
+#content tr .actions a {
+	color: #777;
+}
+#content tr .actions a:hover {
+	color: #000;
+}
+.button.mini {
+	padding: 2px;
 }
 
 #left {
 	color: #eee;
 	min-height: 25%;
-	position: relative;
 }
 
 #left .inside {
