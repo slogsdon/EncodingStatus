@@ -9,16 +9,21 @@ $app->get('/:page(/:id(/:action))', function ($page, $id = null, $action = null)
 	
 	switch ($page) {
 		case 'jobs':
-			$filter = 'not_completed';
+			$filter = null;
 			if (!is_null($id) && !intval($id)) {
 				if (is_null($action) && $id == 'new') $action = 'edit';
-				if ($id == 'completed') $filter = 'completed';
+				if ($id == 'completed') $filter = $id;
+				if ($id == 'not_completed') $filter = $id;
+				if ($id == 'running') $filter = $id;
+				if ($id == 'failed') $filter = $id;
+				if ($id == 'all') $filter = null;
 			}
 			$data = $data->
 				where('trashed', 0)->
 				order_by_desc('started_at')->
-				order_by_desc('priority')->
-				filter($filter);
+				order_by_desc('priority');
+			if (!is_null($filter))
+				$data = $data->filter($filter);
 			break;
 		default:
 			return;
@@ -55,9 +60,16 @@ $app->get('/', function () use ($app) {
 	$view = $app->view();
 	$file = $view->getTemplatesDirectory() . '/content.home.php';
 
+	$jobs = Model::factory('Job');
+
 	$data = array(
 		'app' => $app,
 		'file' => $file,
+		'completed' => $jobs->filter('completed')->find_many(),
+		'running' => $jobs->filter('running')->find_many(),
+		'failed' => $jobs->filter('failed')->find_many(),
+		'uniques' => $jobs->group_by('input_file')->find_many(),
+		'all' => $jobs->find_many(),
 		//'db' => $db,
 	);
 	$app->render('application.php', $data);

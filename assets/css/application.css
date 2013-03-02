@@ -69,6 +69,37 @@ div.inside {
 	padding: 2px;
 }
 
+#metrics .inside {
+	background: #eee;
+	border: 1px solid #ddd;
+    border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+}
+#metrics .inside:hover {
+	background: #ddd;
+	border-color: #ccc;
+}
+#metrics .inside > a {
+	text-decoration: none;
+	width: 100%;
+}
+#metrics .count, #metrics .label {
+	text-align: center;
+	width: 100%;
+}
+#metrics .count {
+	font-size: 6em;
+	font-weight: 900;
+	line-height: 1.25em;
+}
+#metrics .label {
+	text-decoration: underline;
+}
+
 #left {
 	color: #eee;
 	min-height: 25%;

@@ -18,4 +18,10 @@ class Job extends Model {
     public static function not_completed($orm) {
     	return $orm->where_null('finished_at');
     }
+    public static function running($orm) {
+        return $orm->where_not_null('pid');
+    }
+    public static function failed($orm) {
+        return $orm->where_null('pid')->where_not_null('started_at');
+    }
 }
